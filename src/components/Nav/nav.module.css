@@ -1,0 +1,12 @@
+.navCategoriesOptionStyle {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.navCategoriesOptionStyle:hover {
+    border-color: white;
+}

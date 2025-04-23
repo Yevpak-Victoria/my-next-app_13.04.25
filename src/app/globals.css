@@ -1,13 +1,6 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 html,
@@ -35,8 +28,15 @@ a {
   text-decoration: none;
 }
 
+
+.navCategoriesOptionStyle {
+  padding: 10px;
+  font-size: 18px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
