@@ -1,0 +1,43 @@
+.GridTable{
+    color: black;
+    height: 90vh;
+    width: 94vw;
+    background-color: #4D4D4D;
+    display: grid;
+    grid-template-areas:
+        'title second first'
+        'title second third'
+        'title secondDescription third'
+        'title secondDescription thirdDescription';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1px;
+}
+
+.GridTable > div{
+    background-color: black;
+}
+
+.title{
+    grid-area: title;
+}
+
+.first{
+    grid-area: first;
+}
+
+.second{
+    grid-area: second;
+}
+
+.secondDescription{
+    grid-area: secondDescription;
+}
+
+.third{
+    grid-area: third;
+}
+
+.thirdDescription{
+    grid-area: thirdDescription;
+}

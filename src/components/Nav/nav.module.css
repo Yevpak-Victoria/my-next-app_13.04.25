@@ -1,12 +1,76 @@
 .navCategoriesOptionStyle {
-    padding: 8px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 50px;
-    border: 1px solid transparent;
-    cursor: pointer;
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .navCategoriesOptionStyle:hover {
-    border-color: white;
+  border-color: white;
+}
+
+.navMiddleItem {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 60%;
+  padding: 4vh 2vw;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #b3b3b3;
+}
+
+.navLogo {
+  width: 15%;
+  background-color: antiquewhite;
+}
+
+.nav {
+  position: fixed; /* Робить навігацію зафіксованою */
+  top: 0; /* Приліплює до самого верху */
+  left: 0; /* І розтягує зліва */
+  right: 0; /* І розтягує справа */
+  z-index: 1000;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+  padding: 0 30px;
+}
+
+.myTitle {
+  font-family: var(--font-unbounded), sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500;
+}
+
+.myTitle:hover {
+  color: #3d73ff;
+}
+
+.frontLogoSymbols {
+  display: inline-flex;
+  font-weight: 600;
+}
+
+.colon {
+  transform: translateY(-5px);
+}
+
+.slash {
+  display: inline-block;
+  transform: scaleY(0.9);
 }

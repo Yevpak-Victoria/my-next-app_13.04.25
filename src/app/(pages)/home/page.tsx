@@ -1,44 +1,39 @@
-import styles from '../../page.module.css'
 import Box from '@mui/material/Box'
+import RightVideoBlock from '@/components/RightVideoBlock'
+import { LeftBlockHomePage } from '@/components/HomePage/LeftBlockHomePage'
+import styles from '@/app/(pages)/home/home.module.css'
+import { Typography } from '@mui/material'
 
 export default function Home() {
   return (
-    <Box sx={{ display: 'flex', height: '100vh' }}>
-      {/* Лівий блок */}
-      <Box sx={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <h1>Привіт</h1>
+    <>
+      <Box sx={{ display: 'flex', height: '100vh' }}>
+        <LeftBlockHomePage />
+        <RightVideoBlock />
       </Box>
+      <Box sx={{display: 'flex', justifyContent:'center', alignItems: 'center', height: '100vh', width: '100%'}}>
+        <Box className={styles.GridTable}>
+          <div className={styles.title}>
+            <h2>My Header</h2>
+          </div>
+          <div className={styles.first}>
+            <a href='#'>Link 3</a>
+          </div>
+          <div className={styles.second}>
+            <h3>Lorem Ipsum</h3>
+          </div>
+          <div className={styles.secondDescription}>
+            <h4>Footer</h4>
+          </div>
+          <div className={styles.third}>
+            <h4>Footer</h4>
+          </div>
+          <div className={styles.thirdDescription}>
+            <h4>Footer</h4>
+          </div>
+        </Box>
 
-      {/* Правий блок з відео як фоном */}
-      <Box
-        sx={{
-          flex: 1,
-          position: 'relative',
-          overflow: 'hidden',
-          display: 'flex',
-          alignItems: 'end',
-          justifyContent: 'center',
-          color: 'white',
-        }}
-      >
-        {/* Відео як фон */}
-        <video
-          src="/HomePageBackgroundVideo.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{
-            position: 'absolute',
-            top: 70,
-            left: 70,
-            width: '60%',
-            height: '60%',
-            objectFit: 'cover',
-            zIndex: -1,
-          }}
-        />
       </Box>
-    </Box>
+    </>
   )
 }

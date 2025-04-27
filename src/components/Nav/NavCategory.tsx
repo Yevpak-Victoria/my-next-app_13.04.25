@@ -1,13 +1,9 @@
-import styles from './nav.module.css';
+import styles from './nav.module.css'
 
 type Props = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 export default function NavCategory({ children }: Props) {
-  return (
-    <p className={styles.navCategoriesOptionStyle}>
-      {children}
-    </p>
-  );
+  return <p className={styles.navCategoriesOptionStyle}>{children}</p>
 }

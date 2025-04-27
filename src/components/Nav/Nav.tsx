@@ -1,7 +1,6 @@
-import styles from '@/app/page.module.css'
+import styles from '@/components/Nav/nav.module.css'
 import Box from '@mui/material/Box'
 import NavCategory from '@/components/Nav/NavCategory'
-import { Button } from '@mui/material'
 import CustomButton from '@/components/CustomButton'
 
 const navCategoriesOptions: string[] = [
@@ -14,10 +13,9 @@ const navCategoriesOptions: string[] = [
   'Контакти',
 ]
 
-export function Nav (){
+export function Nav() {
   return (
     <nav className={styles.nav}>
-      {/*<p className={styles.navLogo}>Logo</p>*/}
       <p className={styles.myTitle}>
         <span className={styles.frontLogoSymbols}>
           <span className={styles.colon}>:</span>
